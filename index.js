@@ -1,4 +1,4 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-ReactDOM.render(<h1>Hello world!</h1>, document.getElementById("root"))
+ReactDOM.render(<ul><li>First Item</li><li>Second Item</li><li>Third Item</li></ul>, document.getElementById("root"))
