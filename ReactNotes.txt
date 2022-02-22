@@ -6,3 +6,7 @@ Can't render 2 jsx elements next to each other (but you can put a wrapper around
 Functional Components: 
 Components you make are capitalized, html standard ones (like div) are not 
 
+Styling should  only be added to traditional elements (like header or p), not your custom components
+
+Need to use {} to use const within an element
+ES6 uses `$` as well as {}

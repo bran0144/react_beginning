@@ -4,11 +4,17 @@ import MainContent from "./components/MainContent"
 import Navbar from "./components/Navbar"
 
 function App() {
+    const firstName = "Katie"
+    const lastName = "Gott"
     return (
         <div> 
-            <Navbar/>
-            <MainContent />
-            <Footer />
+            <h1>Hello {firstName + " " + lastName}!</h1>
+           <input type="checkbox" />
+           <p>Placeholder</p> 
+           <input type="checkbox" />
+           <p>Placeholder</p> 
+           <input type="checkbox" />
+           <p>Placeholder</p> 
         </div>
     )
 }

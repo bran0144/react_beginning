@@ -1,7 +1,7 @@
 import React from "react"
 
-function NavBar() {
-    <header>NavBar here</header>
+function Navbar() {
+    <header className="navbar">NavBar here</header>
 }
 
 export default Navbar
