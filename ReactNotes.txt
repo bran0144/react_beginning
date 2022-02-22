@@ -4,3 +4,5 @@ JSX- looks a lot like HTML but renders like Javascript
 Can't render 2 jsx elements next to each other (but you can put a wrapper around them)
 
 Functional Components: 
+Components you make are capitalized, html standard ones (like div) are not 
+
