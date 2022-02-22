@@ -1,7 +1,7 @@
 import React from "react"
-import Footer from "./Footer"
-import MainContent from "./MainContent"
-import Navbar from "./Navbar"
+import Footer from "./components/Footer"
+import MainContent from "./components/MainContent"
+import Navbar from "./components/Navbar"
 
 function App() {
     return (
