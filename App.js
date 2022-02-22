@@ -4,18 +4,21 @@ import MainContent from "./components/MainContent"
 import Navbar from "./components/Navbar"
 
 function App() {
-    const firstName = "Katie"
-    const lastName = "Gott"
+    const date = new Date()
+    const hours = date.getHours()
+    let timeOfDay 
+
+    if (hours < 12) {
+        timeOfDay = "morning"
+    } else if (hours >= 12 && hours < 17) {
+        timeOfDay = "afternoon"
+    }else {
+        timeOfDay = "night"
+    }
+
+
     return (
-        <div> 
-            <h1>Hello {firstName + " " + lastName}!</h1>
-           <input type="checkbox" />
-           <p>Placeholder</p> 
-           <input type="checkbox" />
-           <p>Placeholder</p> 
-           <input type="checkbox" />
-           <p>Placeholder</p> 
-        </div>
+        <h1>Good {timeOfDay}!</h1>
     )
 }
 export default App
