@@ -14,3 +14,4 @@ const jokesData = [
     question: "dad joke",
     punchline: "ha ha"}
 ]
+export default jokesData

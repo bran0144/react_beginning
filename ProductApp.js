@@ -1,16 +1,14 @@
 import React from "react";
-import productsData from "./productsData"
+import Product from "./components/Product";
+import productsData from "./components/productsData"
 
 function ProductApp() {
-    return (
-        <div>
-            const productComponents = productsData.map(product => <Product key={product.id} name={product.name} />)
-        </div>
-    )
+    const productComponents = productsData.map(item => <Product key={item.id} product={item}/>)
+
 }    return (
-    <div>
-        {productComponents}
-    </div>
+        <div>
+            {productComponents}
+        </div>
 )
 
 export default ProductApp

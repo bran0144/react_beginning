@@ -1,14 +1,19 @@
 const productsData = [
     {
         id: 1,
-        name: Oreos
+        name: Oreos,
+        price: 1.99
     },
     {
         id: 2,
-        name: Triscuits
+        name: Triscuits,
+        price: 2.98
     },
     {
         id: 3,
-        name: Ritz
+        name: Ritz,
+        price: 3.00
     }
 ]
+
+export default productsData
