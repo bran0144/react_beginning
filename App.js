@@ -3,17 +3,37 @@ import Footer from "./components/Footer"
 import MainContent from "./components/MainContent"
 import Navbar from "./components/Navbar"
 
-function App() {
+// function App() {
 
-    return (
-        <div className="todo-list">
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
-        </div>
-        // need to wrap in curly braces for the object and again for using JS
-        // can't use background-color - needs to be camelCase
-    )
+//     return (
+//         <div className="todo-list">
+//         <TodoItem />
+//         <TodoItem />
+//         <TodoItem />
+//         </div>
+//         // need to wrap in curly braces for the object and again for using JS
+//         // can't use background-color - needs to be camelCase
+//     )
+// }
+
+class App extends React.Component {
+
+    myMethod() {
+        // display logic
+    }
+    render() {
+        const date = new Date();
+        this.myMethod()
+        // inline styling goes here (and conditional rendering)
+        return (
+            <div className="todo-list">
+            <h1>{this.props.whatever}</h1>    
+            <TodoItem />
+            <TodoItem />
+            <TodoItem />
+            </div>
+        )
+    }
 }
 export default App
 
