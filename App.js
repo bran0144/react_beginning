@@ -17,20 +17,21 @@ import Navbar from "./components/Navbar"
 // }
 
 class App extends React.Component {
-
-    myMethod() {
-        // display logic
+    constructor() {
+        super()
+        this.state = {
+            answer: "Yes"
+        }
     }
+
     render() {
         const date = new Date();
         this.myMethod()
         // inline styling goes here (and conditional rendering)
         return (
-            <div className="todo-list">
-            <h1>{this.props.whatever}</h1>    
-            <TodoItem />
-            <TodoItem />
-            <TodoItem />
+            <div >
+                <h1>Is state import to know? {this.state.answer}</h1>
+                <ChildComponent answer={this.state.answer}/>
             </div>
         )
     }

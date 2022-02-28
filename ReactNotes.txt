@@ -10,3 +10,6 @@ Styling should  only be added to traditional elements (like header or p), not yo
 
 Need to use {} to use const within an element
 ES6 uses `${} ${}` as well as {}
+
+If you want a component to maintain state then it has to be class based not function based
+To pass state from one component to another (say to a child), you need to use props
