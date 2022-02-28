@@ -23,6 +23,17 @@ class App extends React.Component {
             answer: "Yes"
         }
     }
+    componentDidMount() {
+        // mostly commonly used for an API call to get data to display
+    }
+    shouldComponentUpdate(nextProps, nextState) {
+        // return true if we want to update
+        // return false if we don't want to update
+    }
+    componentWillUnmount() {
+        // to do some kind of clean up before the component disappears
+        // maybe remove an event listener?
+    }
 
     render() {
         const date = new Date();
