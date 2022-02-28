@@ -16,7 +16,7 @@ class LoginApp extends Component {
 
     render() {
         let wordDisplay
-        if (this.state.isLogginIn === true) {
+        if (this.state.isLogginIn) {
             wordDisplay = "in"
         } else {
             wordDisplay = "out"
