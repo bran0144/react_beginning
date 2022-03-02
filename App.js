@@ -26,6 +26,9 @@ class App extends React.Component {
     componentDidMount() {
         // mostly commonly used for an API call to get data to display
     }
+    componentDidUpdate() {
+        
+    }
     shouldComponentUpdate(nextProps, nextState) {
         // return true if we want to update
         // return false if we don't want to update
@@ -33,6 +36,13 @@ class App extends React.Component {
     componentWillUnmount() {
         // to do some kind of clean up before the component disappears
         // maybe remove an event listener?
+    }
+    static getDerivedStateFromProps(props, state) {
+        //should return new updated state based upon the props
+        // you may not need derived state 
+    }
+    getSnapshotBeforeUpdate() {
+        // creates a backup of current way things are
     }
 
     render() {
